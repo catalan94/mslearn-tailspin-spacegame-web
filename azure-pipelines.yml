@@ -1,3 +1,11 @@
+schedules:
+# Each week day (monday to friday) at 3 AM.
+- cron: "0 3 * * 1,2,3,4,5" 
+  displayName: Daily midnight build
+  branches:
+    include:
+    - main
+
 trigger:
 - '*'
 
